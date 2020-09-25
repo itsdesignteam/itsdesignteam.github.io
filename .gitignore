@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+=======
+*.gem
+.bundle
+.DS_Store
+.sass-cache
+_site
+Gemfile.lock
+>>>>>>> *  Initial Commit from tale theme

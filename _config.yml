@@ -1,7 +1,7 @@
 # Site settings
-title:          ItsTeam
+title:          Its Team
 description:    "A storytellers for design"
-url:            "https://new.itsteam.kr"
+url:            "https://www.itsteam.kr"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
@@ -28,7 +28,11 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
-  # - jemoji #Uncomment this to allow emoji in your post
+  - jekyll-gist
+  - jekyll-admin
+  - jemoji
+  - jekyll-include-cache
+
 
 # Permalinks
 permalink:      /:year-:month-:day/:title

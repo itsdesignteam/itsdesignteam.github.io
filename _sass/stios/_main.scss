@@ -1,0 +1,58 @@
+
+a.logo {
+    width: 100%;
+}
+a.logo img{
+    height: 64px;
+    width: 64px;
+}
+
+#header {
+    background: transparent;
+    height: 50%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    margin-top: -4.18182em;
+    z-index: 1000;
+    display: block;
+}
+#header hgroup{
+    position: absolute;
+    bottom: 0;
+    margin-left: -32px;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+div.home-wrap {
+    padding-top: 70px;
+    width: 100%;
+    align-content: center;
+    margin: 0 auto 0 auto;
+    nav{
+        width: 50%;
+        margin-left: 43%;
+    }
+    ul{
+        display: block;
+        list-style: none;
+        li{
+            display: list-item;
+            padding: 3px;
+            a {
+                padding-left: 5px;
+                padding-right: 5px;
+                margin-right:3px;
+                width:15px;
+                text-decoration:none;
+            }
+            a:hover, a:focus {
+                color:#fff;
+                background-color:#f40;
+            }
+        }
+    }
+}

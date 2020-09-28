@@ -1,4 +1,7 @@
-
+body.home{
+    padding-left: 100px;
+    overflow: hidden;
+}
 a.logo {
     width: 100%;
 }
@@ -9,7 +12,7 @@ a.logo img{
 
 #header {
     background: transparent;
-    height: 50%;
+    height: 35%;
     position: relative;
     text-align: center;
     width: 100%;
@@ -21,27 +24,26 @@ a.logo img{
 #header hgroup{
     position: absolute;
     bottom: 0;
-    margin-left: -32px;
-    left: 50%;
     width: 64px;
     height: 64px;
 }
 
 div.home-wrap {
-    padding-top: 70px;
-    width: 100%;
-    align-content: center;
+    display: inline-block;
+    padding-top: 30px;
     margin: 0 auto 0 auto;
+    width: 100%;
     nav{
-        width: 50%;
-        margin-left: 43%;
+        width: 70%;
     }
     ul{
+        padding-left: 0;
         display: block;
         list-style: none;
         li{
             display: list-item;
-            padding: 3px;
+            padding-top: 4px;
+            padding-bottom: 4px;
             a {
                 padding-left: 5px;
                 padding-right: 5px;

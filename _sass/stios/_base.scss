@@ -1,23 +1,20 @@
-html,
-body {
-  padding: 10px;
-}
-
 html {
   font-family: $font-primary;
-  font-size: 14px;
-  overflow-y: scroll;
+  font-size: 30px;
+  margin: 0px;
+  padding: 0px;
   height: 100%;
   width: 100%;
-  @media (min-width: 600px) {
-    font-size: 16px;
-  }
+  display: inline-block;
 }
 
 body {
   -webkit-text-size-adjust: 100%;
   height: 100%;
   width: 100%;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1,
@@ -40,14 +37,6 @@ blockquote {
   color: #1b1b1b;
   margin: .8rem 0;
   padding: .5rem 1rem;
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-
-  @media (min-width: 600px) {
-    padding: 0 5rem 0 1.25rem;
-  }
 }
 
 img {

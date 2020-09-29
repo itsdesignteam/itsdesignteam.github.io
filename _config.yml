@@ -28,11 +28,9 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-gist
   - jekyll-admin
   - jemoji
   - jekyll-include-cache
-
 
 # Permalinks
 permalink:      /:year-:month-:day/:title

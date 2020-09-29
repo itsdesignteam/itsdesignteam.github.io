@@ -1,6 +1,10 @@
 body.home{
     padding-left: 100px;
+    @media only screen and (max-width: 600px) {
+        padding-left: 30px;
+    }
     overflow: hidden;
+    position: fixed;
 }
 a.logo {
     width: 100%;
@@ -57,4 +61,18 @@ div.home-wrap {
             }
         }
     }
+}
+
+#hover-img{
+    visibility: hidden;
+    position: absolute;
+    height: 512px;
+    width: 512px;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.homwrap nav ul li a:hover ~ #hover-img{
+    visibility: visible;
 }

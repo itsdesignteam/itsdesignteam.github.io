@@ -2,7 +2,17 @@
 layout: home
 title: Home
 ---
-<body class="home" style="background-color: rgb(240, 240, 240); position: fixed; overflow: hidden;">
+<body class="home">
+<script type="text/javascript">
+    function hvimg(bb) {
+		if(bb){
+			document.getElementById('hover-img').style.visibility = 'visible';
+		}else{
+			document.getElementById('hover-img').style.visibility = 'hidden';
+		}
+    
+}   
+</script>
 	<header id="header" style="display: block;">
 	<hgroup>
 		<a class="logo" href="{{ site.baseurl }}/">
@@ -10,14 +20,16 @@ title: Home
 	<div class="home-wrap" style="display: block;">
 		<nav>
 			<ul class="home-menu">
-				<li><a href="{{ site.baseurl }}/newproducts"><span>New products</span></a></li>
-				<li><a href="{{ site.baseurl }}/fw2020preview"><span>Fall/Winter 2020</span></a></li>
-				<li><a href="{{ site.baseurl }}/news">News</a></li>
-				<li><a href="{{ site.baseurl }}/shop"><span>Shop</span></a></li>
-				<li><a href="{{ site.baseurl }}/about"><span>About</span></a></li>
-				<li><a href="{{ site.baseurl }}/portfolio"><span>Portfolio</span></a></li>
-				<li><a href="{{ site.baseurl }}/contact"><span>Contact</span></a></li>
+				<li><a onmouseover="hvimg(true)" onmouseout="hvimg(false)" href={{ site.baseurl }}/newproducts><span>New products</span></a></li>
+				<li><a onmouseover="hvimg(true)" onmouseout="hvimg(false)" href="{{ site.baseurl }}/fw2020preview"><span>Fall/Winter 2020</span></a></li>
+				<li><a onmouseover="hvimg(true)" onmouseout="hvimg(false)" href="{{ site.baseurl }}/news">News</a></li>
+				<li><a onmouseover="hvimg(true)" onmouseout="hvimg(false)" href="{{ site.baseurl }}/shop"><span>Shop</span></a></li>
+				<li><a onmouseover="hvimg(true)" onmouseout="hvimg(false)" href="{{ site.baseurl }}/about"><span>About</span></a></li>
+				<li><a onmouseover="hvimg(true)" onmouseout="hvimg(false)" href="{{ site.baseurl }}/portfolio"><span>Portfolio</span></a></li>
+				<li><a onmouseover="hvimg(true)" onmouseout="hvimg(false)" href="{{ site.baseurl }}/contact"><span>Contact</span></a></li>
 			</ul>
 		</nav>
 	</div>
+	<img id="hover-img" src="{{ site.baseurl }}/assets/image/main-hover.jpg">
+
 </body>

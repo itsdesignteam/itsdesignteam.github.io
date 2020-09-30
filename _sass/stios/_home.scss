@@ -55,7 +55,7 @@ div.home-wrap {
                 width:15px;
                 text-decoration:none;
             }
-            a:hover, a:focus {
+            a:hover, a:focus, a:active {
                 color:#fff;
                 background-color:#f40;
             }
@@ -73,6 +73,8 @@ div.home-wrap {
     transform: translate(-50%, -50%);
 }
 
-.homwrap nav ul li a:hover ~ #hover-img{
-    visibility: visible;
+@media (hover: hover) {
+    a:hover {
+        
+    }
 }

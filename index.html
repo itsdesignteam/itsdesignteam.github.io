@@ -4,14 +4,46 @@ title: Home
 ---
 <body class="home">
 <script type="text/javascript">
+	var Mobile = false;
+	var AgentStr = navigator.userAgent.toLowerCase();
+	var MobileArr = ['iphone','ipod','ipad','android','blackberry','windows ce','nokia','webos','opera mini','sonyericsson','opera mobi','iemobile'];
+	for (var model in MobileArr){
+		if (AgentStr.indexOf(MobileArr[model]) != -1){
+		Mobile = true;
+		break;
+		}
+	}  
     function hvimg(bb) {
-		if(bb){
+		if(bb && !Mobile){
 			document.getElementById('hover-img').style.visibility = 'visible';
 		}else{
 			document.getElementById('hover-img').style.visibility = 'hidden';
 		}
-    
-}   
+		if(bb)
+			document.addEventListener("touchstart", function() {}, true);
+    }
+function hasTouch() {
+return 'ontouchstart' in document.documentElement
+         || navigator.maxTouchPoints > 0
+         || navigator.msMaxTouchPoints > 0;
+}
+
+if (hasTouch()) { // remove all the :hover stylesheets
+  try { // prevent exception on browsers not supporting DOM styleSheets properly
+    for (var si in document.styleSheets) {
+      var styleSheet = document.styleSheets[si];
+      if (!styleSheet.rules) continue;
+
+      for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+        if (!styleSheet.rules[ri].selectorText) continue;
+
+        if (styleSheet.rules[ri].selectorText.match(':hover')) {
+          styleSheet.deleteRule(ri);
+        }
+      }
+    }
+  } catch (ex) {}
+}
 </script>
 	<header id="header" style="display: block;">
 	<hgroup>

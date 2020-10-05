@@ -3,6 +3,7 @@ body.home{
     @media only screen and (max-width: 600px) {
         padding-left: 30px;
     }
+
     overflow: hidden;
     position: fixed;
 }
@@ -34,8 +35,7 @@ a.logo img{
 
 div.home-wrap {
     display: inline-block;
-    padding-top: 30px;
-    margin: 0 auto 0 auto;
+    margin-top: 30px;
     width: 100%;
     nav{
         width: 70%;
@@ -54,12 +54,17 @@ div.home-wrap {
                 margin-right:3px;
                 width:15px;
                 text-decoration:none;
+                font-size: 23px;
             }
             a:hover, a:focus, a:active {
                 color:#fff;
-                background-color:#f40;
+                background-color:#000;
             }
         }
+    }
+
+    @media only screen and (max-height: 456px) {
+        margin-top: 10px;
     }
 }
 

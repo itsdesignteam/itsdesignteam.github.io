@@ -16,7 +16,7 @@ author:
 markdown:       kramdown
 include:
   - _pages
-theme:          stios-theme
+# theme:          stios
 
 # Assets
 sass:

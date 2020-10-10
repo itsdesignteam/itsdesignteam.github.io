@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   display: inline-block;
   margin: 0px;
   padding: 0px;
@@ -39,6 +39,10 @@ h6 {
 a {
   color: $font-color-base;
   text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  color:#000;
+  background-color:#EAEAEA;
 }
 
 blockquote {

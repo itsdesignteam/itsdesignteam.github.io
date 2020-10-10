@@ -1,85 +1,59 @@
 body.home{
-    padding-left: 100px;
-    @media only screen and (max-width: 600px) {
-        padding-left: 30px;
-    }
-
     overflow: hidden;
-    position: fixed;
-}
-a.logo {
-    width: 100%;
-}
-a.logo img{
-    height: 64px;
-    width: 64px;
-}
-
-#header {
-    background: transparent;
-    height: 46%;
     position: relative;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto 0 auto;
-    margin-top: -4.18182em;
-    z-index: 1000;
-    display: block;
-}
-#header hgroup{
-    position: absolute;
-    bottom: 0;
-    width: 64px;
-    height: 64px;
 }
 
-div.home-wrap {
-    display: inline-block;
-    margin-top: 30px;
-    width: 100%;
-    nav{
-        width: 70%;
+table.home-wrap {
+    border: none;
+    position: absolute;
+    @media screen and (min-width: 1060px){
+        width: 800px;
+        height: 700px;
+        top: 50%;
+        left: 50%;
+        margin-left: -400px;
+        margin-top: -350px;
     }
-    ul{
-        padding-left: 0;
-        display: block;
-        list-style: none;
-        li{
-            display: list-item;
-            padding-top: 4px;
-            padding-bottom: 4px;
-            a {
-                padding-left: 5px;
-                padding-right: 5px;
-                margin-right:3px;
-                width:15px;
-                text-decoration:none;
-                font-size: 23px;
-            }
-            a:hover, a:focus, a:active {
-                color:#fff;
-                background-color:#000;
-            }
+    @media screen and (max-width: 1060px){
+        width: 800px;
+        height: 700px;
+        top: 50%;
+        left: 50%;
+        margin-left: -400px;
+        margin-top: -350px;
+    }
+    
+}
+
+#menu-item{
+    word-break:break-all;
+    a{
+        @media screen and (min-width: 1060px){
+            font-size: 105px;
+        }
+        @media screen and (max-width: 1060px){
+            font-size: 105px;
         }
     }
-
-    @media only screen and (max-height: 456px) {
-        margin-top: 10px;
-    }
 }
 
-#hover-img{
-    visibility: hidden;
+#home-logo{
     position: absolute;
-    height: 512px;
-    width: 512px;
-    top: 50%;
-    right: 0%;
-    transform: translate(-50%, -50%);
-}
-
-@media (hover: hover) {
-    a:hover {
-        
+    @media screen and (min-width: 1060px){
+        top: 50%;
+        left: 50%;
+        margin-left: 144px;
+        margin-top: 44px;
+        width: 256px;
+        height: 256px;
+    }
+    @media screen and (max-width: 1060px){
+        top: 50%;
+        left: 50%;
+        margin-left: 144px;
+        margin-top: 44px;
+        width: 256px;
+        height: 256px;
     }
 }
+

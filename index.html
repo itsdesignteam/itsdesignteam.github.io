@@ -2,65 +2,13 @@
 layout: home
 ---
 <body class="home">
-<script type="text/javascript">
-	var Mobile = false;
-	var AgentStr = navigator.userAgent.toLowerCase();
-	var MobileArr = ['iphone','ipod','ipad','android','blackberry','windows ce','nokia','webos','opera mini','sonyericsson','opera mobi','iemobile'];
-	for (var model in MobileArr){
-		if (AgentStr.indexOf(MobileArr[model]) != -1){
-		Mobile = true;
-		break;
-		}
-	}  
-    function hvimg(bb) {
-		if(bb && !Mobile){
-			document.getElementById('hover-img').style.visibility = 'visible';
-		}else{
-			document.getElementById('hover-img').style.visibility = 'hidden';
-		}
-		if(bb)
-			document.addEventListener("touchstart", function() {}, true);
-    }
-function hasTouch() {
-return 'ontouchstart' in document.documentElement
-         || navigator.maxTouchPoints > 0
-         || navigator.msMaxTouchPoints > 0;
-}
-
-if (hasTouch()) { // remove all the :hover stylesheets
-  try { // prevent exception on browsers not supporting DOM styleSheets properly
-    for (var si in document.styleSheets) {
-      var styleSheet = document.styleSheets[si];
-      if (!styleSheet.rules) continue;
-
-      for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-        if (!styleSheet.rules[ri].selectorText) continue;
-
-        if (styleSheet.rules[ri].selectorText.match(':hover')) {
-          styleSheet.deleteRule(ri);
-        }
-      }
-    }
-  } catch (ex) {}
-}
-</script>
-	<header id="header" style="display: block;">
-	<hgroup>
-		<a class="logo" href="{{ site.baseurl }}/">
-		<img src="assets/image/logo-main.png" alt="Its Team" /></a></hgroup></header>
-	<div class="home-wrap" style="display: block;">
-		<nav>
-			<ul class="home-menu">
-				<li><a onmouseover="hvimg(true)" onmouseout="hvimg(false)" href={{ site.baseurl }}/newproducts><span>New products</span></a></li>
-				<li><a onmouseover="hvimg(true)" onmouseout="hvimg(false)" href="{{ site.baseurl }}/fw2020"><span>Fall/Winter 2020</span></a></li>
-				<li><a onmouseover="hvimg(true)" onmouseout="hvimg(false)" href="{{ site.baseurl }}/news">News</a></li>
-				<li><a onmouseover="hvimg(true)" onmouseout="hvimg(false)" href="https://itsteam.kr/store/"><span>Shop</span></a></li>
-				<li><a onmouseover="hvimg(true)" onmouseout="hvimg(false)" href="{{ site.baseurl }}/about"><span>About</span></a></li>
-				<li><a onmouseover="hvimg(true)" onmouseout="hvimg(false)" href="{{ site.baseurl }}/portfolio"><span>Portfolio</span></a></li>
-				<li><a onmouseover="hvimg(true)" onmouseout="hvimg(false)" href="{{ site.baseurl }}/contact"><span>Contact</span></a></li>
-			</ul>
-		</nav>
-	</div>
-	<img id="hover-img" src="{{ site.baseurl }}/assets/image/main-hover.jpg">
-
+	<script type="text/javascript"></script>
+		<table class="home-wrap">
+			<tr><td id="menu-item"><a href="{{ site.baseurl }}/about">about us</a></td></tr>
+			<tr><td id="menu-item"><a href="{{ site.baseurl }}/playing-cards">playing cards</a></td></tr>
+			<tr><td id="menu-item"><a href="{{ site.baseurl }}/works">works</a></td></tr>
+			<tr><td id="menu-item"><a href="{{ site.baseurl }}/news">news</a></td>
+			<tr><td id="menu-item"><a href="{{ site.baseurl }}/contact">contact</a></td></tr>
+		</table>
+		<img id="home-logo" src="assets/image/logo-home.png" alt="Its Team" />
 </body>

@@ -16,7 +16,6 @@ author:
 markdown:       kramdown
 include:
   - _pages
-# theme:          stios
 
 # Assets
 sass:
@@ -37,4 +36,4 @@ permalink:      /:year-:month-:day/:title
 paginate:       5
 
 # Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+exclude: [ Gemfile, Gemfile.lock]

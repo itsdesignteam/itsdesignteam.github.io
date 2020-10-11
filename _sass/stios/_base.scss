@@ -36,6 +36,10 @@ h6 {
   font-weight: normal;
 }
 
+p{
+  color: $font-color-base;
+}
+
 a {
   color: $font-color-base;
   text-decoration: none;
@@ -47,7 +51,7 @@ a:hover, a:focus, a:active {
 
 blockquote {
   border-left: .25rem solid #f2f2f2;
-  color: #1b1b1b;
+  color: #DEDEDE;
   margin: .8rem 0;
   padding: .5rem 1rem;
 }

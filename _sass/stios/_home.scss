@@ -4,31 +4,29 @@ body.home{
 }
 
 table.home-wrap {
-    word-break:break-all;
-    border: none;
     position: absolute;
     left: 50%;
     top: 50%;
     @media all and (min-width: 950px) {
         width: 800px;
-        height: 800px;
+        height: 500px;
         margin-left: -400px;
-        margin-top: -400px;
-        font-size: 105px;
-    }
-    @media all and (min-width: 768px) and (max-width: 959px) {
-        width: 600px;
-        height: 600px;
-        margin-left: -300px;
         margin-top: -300px;
-        font-size: 80px;
+        font-size: 106px;
+    }
+    @media all and (min-width: 768px) and (max-width: 949px) {
+        width: 600px;
+        height: 350px;
+        margin-left: -300px;
+        margin-top: -225px;
+        font-size: 78px;
     }
     @media all and (max-width: 767px) {
         width: 300px;
-        height: 300px;
+        height: 200px;
         margin-left: -150px;
-        margin-top: -150px;
-        font-size: 35px;
+        margin-top: -125px;
+        font-size: 38px;
     }
 }
 
@@ -40,23 +38,20 @@ table.home-wrap {
 }
 
 #home-logo{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    top: 50%;
-    left: 50%;
+    float: right;
+    vertical-align: bottom;
+    overflow: hidden;
     @media all and (min-width: 950px) {
-        margin-left: 200px;
-        margin-top: 200px;
+        width: 250px;
+        height: 250px;
     }
-    @media all and (min-width: 768px) and (max-width: 959px) {
-        margin-left: 100px;
-        margin-top: 100px;
-    }
-    @media all and (max-width: 767px) {
+    @media all and (min-width: 768px) and (max-width: 949px) {
         width: 150px;
         height: 150px;
-        font-size: 35px;
+    }
+    @media all and (max-width: 767px) {
+        width: 90px;
+        height: 90px;
     }
 }
 

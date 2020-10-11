@@ -28,6 +28,7 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-admin
+  - github-pages
   - jemoji
   - jekyll-include-cache
 

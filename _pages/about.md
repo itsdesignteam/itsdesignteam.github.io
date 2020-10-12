@@ -4,9 +4,9 @@ title: "about us"
 permalink: /about/
 ---
 
-##about its team
+## about its team
 
-Hello! We're ITS Team, the one and only professional playing card design team based in South Korea.
+Hello! we're *Its Team*, the one and only professional playing card design team based in South Korea.
 
 We released more than 19 varients, printed 26,500 decks to the world since 2013.
 

@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "About"
+title: "about us"
 permalink: /about/
 ---
 
-A friend of mine writes short stories. One sunny day, I asked if he wanted a website to showcase his works and he agreed. I decided to use GitHub Pages to host his site. That way he wouldn't have to buy a domain and a server.
+##about its team
 
-While doing some research up on GitHub Pages, I accidentally chanced upon this _simple, blog-aware, static site generator_ called [Jekyll](https://jekyllrb.com/) which works really well with GitHub Pages. I figured it would do just fine for my friend and I set about searching for a pretty theme. I wanted a theme with a _book-ish_ vibe. Unfortunately, most of the themes were too modern. Eventually, I caved and begun working on my own theme. With the help of [Poole](https://github.com/poole/poole), the Jekyll Butler, I was able to build **Tale**.
+Hello! We're ITS Team, the one and only professional playing card design team based in South Korea.
 
-## Contribute
-Feel free to create an issue or make a pull request on [GitHub](https://github.com/chesterhow/tale).
+We released more than 19 varients, printed 26,500 decks to the world since 2013.
 
-Thanks for reading!
+Our goal is to combine the playing cards and art. We always push the limit of playing card design to make the something more than 54 papers.

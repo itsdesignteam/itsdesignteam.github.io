@@ -21,6 +21,7 @@ Jungmin Ha
 
 Designer / CDO
 Sehyun Park
+![Profile image of Younggun Park](http://www.gstatic.com/webp/gallery/5.jpg "Programmer / CTO
+Younggun Park")
 
-Programmer / CTO
-Younggun Park
+profile_younggun.gif

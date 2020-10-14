@@ -35,6 +35,10 @@ table.home-wrap {
     a{
     vertical-align: middle;
     }
+    a:hover, a:focus, a:active {
+        color:#000;
+        background-color:#EAEAEA;
+      }
 }
 
 #home-logo{
@@ -54,4 +58,3 @@ table.home-wrap {
         height: 90px;
     }
 }
-

@@ -1,11 +1,10 @@
 ---
-layout: default
-title: "Tags"
+layout: page
+title: "tags"
 permalink: /tags/
 ---
 
 <div class="tags">
-  <h1 id="page-title">{{ page.title }}</h1>
   <div class="tags-clouds">
     {% for tag in site.tags %}
     <a href="#{{ tag[0] }}">{{ tag[0] }}</a>

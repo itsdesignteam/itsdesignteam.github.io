@@ -1,81 +1,62 @@
+$home-width: 100px;
+
 .home{
     height: 100%;
     overflow: hidden;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -moz-flex-pack: center;
+    justify-content: center;
 }
 
 .home-wrap {
+    position: relative;
     overflow: hidden;
-    position: absolute;
-    left: 50%;
-    top: 50%;
     text-decoration: none;
+    
+    height: auto;
     a{
-        padding-left: 10px;
-        padding-right: 10px;
-        text-overflow: clip;
+        padding: {
+            right: 10px;
+            left: 10px;
+        }
+        position: relative;
     }
     a:hover, a:focus, a:active {
         color:#000;
         background-color:#EAEAEA;
     }
-    @media all and (min-width: 950px) {
-        width: 600px;
-        height: 400px;
-        margin-left: -300px;
-        margin-top: -200px;
-        font-size: 2.4em;
-        a{
-            height: 80px;
-            display: inline-block;
-            margin: 0;
-        }
+    @media all and (min-width: 1024px) {
+        font-size: 2em;
     }
-    @media all and (min-width: 768px) and (max-width: 949px) {
-        width: 500px;
-        height: 375px;
-        margin-left: -250px;
-        margin-top: -187.5px;
-        font-size: 2.12em;
-        a{
-            height: 75px;
-            display: inline-block;
-            margin: 0;
-        }
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+        font-size: 1.6em;
     }
     @media all and (max-width: 767px) {
-        width: 300px;
-        height: 200px;
-        margin-left: -150px;
-        margin-top: -100px;
-        font-size: 1.25em;
-        a{
-            height: 40px;
-            display: inline-block;
-        }
+        font-size: 1.1em;
     }
 }
 #home-logo{
     position: absolute;
-    left: 50%;
-    top: 50%;
-    overflow: hidden;
-    @media all and (min-width: 950px) {
-        width: 200px;
-        height: 200px;
-        margin-left: 75px;
-        margin-top: -10px;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+    @media all and (min-width: 1024px) {
+        max-width: 150px;
     }
-    @media all and (min-width: 768px) and (max-width: 949px) {
-        width: 150px;
-        height: 150px;
-        margin-left: 90px;
-        margin-top: 27.5px;
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+        max-width: 130px;
     }
     @media all and (max-width: 767px) {
-        width: 90px;
-        height: 90px;
-        margin-left: 55px;
-        margin-top: 5px;
+        max-width: 90px;
+        margin-bottom: 5px;
     }
 }

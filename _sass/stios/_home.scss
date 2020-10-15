@@ -16,24 +16,21 @@ table.home-wrap {
         height: 630px;
         margin-left: -400px;
         margin-top: -315px;
-        font-size: 106px;
+        font-size: 350%;
     }
     @media all and (min-width: 768px) and (max-width: 949px) {
         width: 600px;
         height: 460px;
         margin-left: -300px;
         margin-top: -230px;
-        font-size: 78px;
+        font-size: 350%;
     }
     @media all and (max-width: 767px) {
         width: 300px;
         height: 230px;
         margin-left: -150px;
         margin-top: -115px;
-        font-size: 38px;
-    }
-    tr{
-        
+        font-size: 128%;
     }
 }
 

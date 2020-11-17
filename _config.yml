@@ -1,7 +1,7 @@
 # Site settings
 title:          Its Team
 description:    "A storytellers for design"
-url:            "https://www.itsteam.kr"
+url:            "https://itsdesignteam.github.io/"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
@@ -9,7 +9,7 @@ google_analytics: UA—XXXXXXXX-X
 # Author
 author:
   name:         ItsTeam
-  url:          https://www.itsteam.kr
+  url:          https://itsdesignteam.github.io/
   email:        itsteam.stios@gmail.com
 
 # Build settings

@@ -3,11 +3,33 @@ layout: page
 title: "works"
 permalink: /works/
 ---
-<ul id="news-list">
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {% comment %} {{ post.excerpt }} {% endcomment %}
-    </li>
+<div class="work-gallery">
+  {% for post in site.categories.works %}
+    <a id="linktowork" href="{{ post.url }}">
+      <div class="img-holder">
+        <ul id="work-imgs">
+          <li>
+            <img id="itemimg1" src="{{ post.thumbnail }}" />
+          </li>
+          <li>
+            <img id="itemimg2" src="{{ post.thumbnail }}" />
+          </li>
+          <li>
+            <img id="itemimg3" src="{{ post.thumbnail }}" />
+          </li>
+          <li>
+            <img id="itemimg4" src="{{ post.thumbnail }}" />
+          </li>
+        </ul>
+        <div class="marquee">
+	        <div class="marquee__inner" aria-hidden="true">
+		        <span>{{ post.title }}</span>
+		        <span>{{ post.title }}</span>
+		        <span>{{ post.title }}</span>
+		        <span>{{ post.title }}</span>
+	        </div>
+        </div>
+      </div>
+    </a>
   {% endfor %}
-</ul>
+</div>

@@ -1,3 +1,16 @@
 #post-title{
     text-align: center;
 }
+
+#category-clicker{
+    color: darkgrey;
+    padding: {
+        right: 10px;
+        left: 10px;
+    }
+    position: relative;
+}
+#category-clicker:hover, #category-clicker:focus, #category-clicker:active {
+    color:#000;
+    background-color:#EAEAEA;
+}

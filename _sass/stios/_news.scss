@@ -7,4 +7,15 @@
         padding-top: 4px;
         padding-bottom: 4px;
     }
+    a{
+        padding: {
+            right: 10px;
+            left: 10px;
+        }
+        position: relative;
+    }
+    a:hover, a:focus, a:active {
+        color:#000;
+        background-color:#EAEAEA;
+    }
 }

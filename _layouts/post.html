@@ -3,10 +3,11 @@ layout: default
 ---
 
 <div class="post">
-  {% if page.date %}
-      <h4 align="right"><span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time></h6>
+  {% if page.category %}
   {% endif %}
-  
+
+  <h2><a id="category-clicker" href="{{ site.baseurl }}/{{ page.category }}">{{ page.category }}</a> > {{ page.title }}</h2>
+  <hr id="nav-line" />
   <div class="post-line"></div>
 
   {{ content }}
@@ -19,6 +20,7 @@ layout: default
   {% if page.previous.url %}
     <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
   {% endif %}
-
-  <a href="#" class="top">Top</a>
 </div>
+  {% if page.date %}
+    <h6 align="right"><span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time></h6>
+  {% endif %}

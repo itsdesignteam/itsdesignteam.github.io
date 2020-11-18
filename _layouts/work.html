@@ -1,40 +1,32 @@
-<!DOCTYPE html>
-<html lang="ko">
+---
+layout: default
+---
 
-  {% include head.html %}
+<h2><a id="category-clicker" href="{{ site.baseurl }}/{{ page.category }}">{{ page.category }}</a> > {{ page.title }}</h2>
+<hr id="nav-line" />
+  <div class="work">
+    {% if page.thumbnail %}
+      <img src="{{ page.thumbnail }}">
+    {% endif %}
 
-  <body>
-<div class="work">
-  {% if page.thumbnail %}
-      <img src="{{ page.thumbnail }}">
-      <img src="{{ page.thumbnail }}">
-      <img src="{{ page.thumbnail }}">
-      <img src="{{ page.thumbnail }}">
-  {% endif %}
+    <div class="marquee-forwork">
+	    <div class="marquee__inner" style="color:white;" aria-hidden="true">
+        <span>{{ page.title }}</span>
+        <span>{{ page.title }}</span>
+		    <span>{{ page.title }}</span>
+		    <span>{{ page.title }}</span>
+	    </div>
+    </div>
+    
+  {{ content }}
 
-  <div class="marquee">
-	        <div class="marquee__inner" style="color:white;" aria-hidden="true">
-		        <span>{{ page.title }}</span>
-		        <span>{{ page.title }}</span>
-		        <span>{{ page.title }}</span>
-		        <span>{{ page.title }}</span>
-	        </div>
+</div>
+
+  <div class="work-pagination">
+    {% if page.next.url %}
+      <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+    {% endif %}
+    {% if page.previous.url %}
+      <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+    {% endif %}
   </div>
-
-  <main id="contents">
-      {{ content }}
-  </main>
-
-</div>
-
-<div class="work-pagination">
-  {% if page.next.url %}
-    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
-  {% endif %}
-  {% if page.previous.url %}
-    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
-  {% endif %}
-</div>
-
-  </body>
-</html>

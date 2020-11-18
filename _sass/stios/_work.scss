@@ -1,33 +1,6 @@
-#work-imgs
-{ 
-    white-space: nowrap;
-    padding: 0;
-    li {
-    display: inline-block;
-    /* You can also add some margins here to make it look prettier */
-    zoom:1;
-    *display:inline;
-    /* this fix is needed for IE7- */
-    }
-}
-
-#itemimg1, #itemimg2, #itemimg3, #itemimg4{
-    margin: 40px;
-    height: 264px;
-    width: 189px;
-}
-
-div.img-holder{
-    align-items: center;
-    text-align: center;
-    position: relative;
-}
-
 .work-gallery{
-    margin: -3%;
-    padding{
-        top: 50px;
-    }
+    margin-left: -3%;
+    margin-right: -3%;
     overflow: hidden;
     .marquee {
         display: none;
@@ -36,52 +9,146 @@ div.img-holder{
     a:hover .marquee {
         display: block;
     }
-}
-
-.marquee {
-    position: absolute;
-    top:100px;
-    overflow: hidden;
-    --offset: 20vw;
-    --move-initial: calc(-25% + var(--offset));
-    --move-final: calc(-50% + var(--offset));
-    animation-play-state: running;
-}
-
-.marquee__inner {
-    width: fit-content;
-    display: flex;
-    position: relative;
-    transform: translate3d(var(--move-initial), 0, 0);
-    animation: marquee 5s linear infinite;
-    animation-play-state: paused;
-    animation-play-state: running;
-}
-
-.marquee span {
-    font-size: 10vw;
-    padding: 0 2vw;
-}
-
-.marquee:hover .marquee__inner {
-    animation-play-state: running;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translate3d(var(--move-initial), 0, 0);
+    #work-imgs { 
+        white-space: nowrap;
+        padding: 0;
+        li {
+        display: inline-block;
+        /* You can also add some margins here to make it look prettier */
+        zoom:1;
+        *display:inline;
+        /* this fix is needed for IE7- */
+        }
     }
-
-    100% {
-        transform: translate3d(var(--move-final), 0, 0);
+    
+    #itemimg1, #itemimg2, #itemimg3, #itemimg4{
+        margin: 40px;
+        height: 264px;
+        width: 189px;
+    }
+    
+    div.img-holder{
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    .marquee {
+        position: absolute;
+        top:100px;
+        overflow: hidden;
+        --offset: 20vw;
+        --move-initial: calc(-25% + var(--offset));
+        --move-final: calc(-50% + var(--offset));
+        animation-play-state: running;
+    }
+    
+    .marquee__inner {
+        width: fit-content;
+        display: flex;
+        position: relative;
+        transform: translate3d(var(--move-initial), 0, 0);
+        animation: marquee 5s linear infinite;
+        animation-play-state: paused;
+        animation-play-state: running;
+    }
+    
+    .marquee span {
+        font-size: 4em;
+        padding: 0 2vw;
+    }
+    
+    .marquee:hover .marquee__inner {
+        animation-play-state: running;
+    }
+    
+    @keyframes marquee {
+        0% {
+            transform: translate3d(var(--move-initial), 0, 0);
+        }
+    
+        100% {
+            transform: translate3d(var(--move-final), 0, 0);
+        }
     }
 }
 
 div.work{
+    padding-top: 30px;
+    margin-left: -3%;
+    margin-right: -3%;
+    overflow: hidden;
     align-items: center;
     text-align: center;
     img{
         height: 264px;
         width: 189px;
+        z-index: 2;
+    }
+    .marquee-forwork {
+        z-index: 1;
+        top: 200px;
+        position: absolute;
+        overflow: default;
+        --offset: 20vw;
+        --move-initial: calc(-25% + var(--offset));
+        --move-final: calc(-50% + var(--offset));
+        animation-play-state: running;
+    }
+    
+    .marquee__inner {
+        width: fit-content;
+        display: flex;
+        position: relative;
+        transform: translate3d(var(--move-initial), 0, 0);
+        animation: marquee 5s linear infinite;
+        animation-play-state: paused;
+        animation-play-state: running;
+    }
+
+    .marquee-forwork span {
+        font-size: 8em;
+        padding: 0 2vw;
+    }
+    
+    .marquee-forwork:hover .marquee__inner {
+        animation-play-state: running;
+    }
+
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
     }
 }

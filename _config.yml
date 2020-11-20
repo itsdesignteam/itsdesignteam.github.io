@@ -1,5 +1,5 @@
 # Site settings
-title:          Its Team
+title:          ITS Design Studio
 description:    "A storytellers for design"
 url:            "https://itsdesignteam.github.io/"
 
@@ -8,7 +8,7 @@ google_analytics: UA—XXXXXXXX-X
 
 # Author
 author:
-  name:         ItsTeam
+  name:         ITS Design Studio
   url:          https://itsdesignteam.github.io/
   email:        itsteam.stios@gmail.com
 

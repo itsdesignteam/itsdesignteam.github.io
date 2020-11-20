@@ -25,6 +25,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: $font-primary;
   color: $font-color-base;
   line-height: normal;
   display: block;
@@ -37,7 +38,7 @@ h6 {
 
 p{
   color: $font-color-base;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 a {

@@ -2,6 +2,7 @@
 layout: about
 title: "history"
 permalink: /about-history/
+category: "about"
 ---
 
 #### 2020

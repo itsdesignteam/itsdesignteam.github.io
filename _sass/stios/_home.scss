@@ -23,17 +23,7 @@ $home-width: 100px;
     text-decoration: none;
     
     height: auto;
-    a{
-        padding: {
-            right: 10px;
-            left: 10px;
-        }
-        position: relative;
-    }
-    a:hover, a:focus, a:active {
-        color:#000;
-        background-color:#EAEAEA;
-    }
+    
     @media all and (min-width: 1024px) {
         font-size: 2em;
     }

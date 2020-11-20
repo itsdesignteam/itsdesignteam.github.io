@@ -3,7 +3,9 @@
 }
 
 #category-clicker{
-    color: darkgrey;
+    color:#000;
+    background-color:#EAEAEA;
+    
     padding: {
         right: 10px;
         left: 10px;
@@ -11,6 +13,11 @@
     position: relative;
 }
 #category-clicker:hover, #category-clicker:focus, #category-clicker:active {
-    color:#000;
-    background-color:#EAEAEA;
+    color: #464646;
+    background-color:#000;
+}
+
+div.post{
+    font-family: $sans-serif;
+    text-align: left;
 }

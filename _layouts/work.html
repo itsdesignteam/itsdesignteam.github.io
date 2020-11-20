@@ -10,7 +10,7 @@ layout: default
     {% endif %}
 
     <div class="marquee-forwork">
-	    <div class="marquee__inner" style="color:white;" aria-hidden="true">
+	    <div class="marquee__inner" aria-hidden="true">
         <span>{{ page.title }}</span>
         <span>{{ page.title }}</span>
 		    <span>{{ page.title }}</span>
@@ -18,7 +18,9 @@ layout: default
 	    </div>
     </div>
     
-  {{ content }}
+  <div class="post work-content">
+    {{ content }}
+  </div>
 
 </div>
 

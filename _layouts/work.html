@@ -9,7 +9,7 @@ layout: default
       <img src="{{ page.thumbnail }}">
     {% endif %}
 
-    <div class="marquee forwork">
+    {% comment %} <div class="marquee forwork">
 	    <div class="marquee__inner" aria-hidden="true">
         <span>{{ page.title }}</span>
         <span>{{ page.title }}</span>
@@ -18,7 +18,7 @@ layout: default
         <span>{{ page.title }}</span>
 		    <span>{{ page.title }}</span>
 	    </div>
-    </div>
+    </div> {% endcomment %}
     
   <div class="post work-content">
     {{ content }}
@@ -27,10 +27,12 @@ layout: default
 </div>
 
   <div class="work-pagination">
+  <center>
     {% if page.next.url %}
       <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
     {% endif %}
     {% if page.previous.url %}
       <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
     {% endif %}
+  </center>
   </div>

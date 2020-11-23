@@ -23,9 +23,8 @@ layout: default
   <div class="post work-content">
     {{ content }}
   </div>
-
 </div>
-
+{% comment %}
   <div class="work-pagination">
   <center>
     {% if page.next.url %}
@@ -36,3 +35,4 @@ layout: default
     {% endif %}
   </center>
   </div>
+{% endcomment %}

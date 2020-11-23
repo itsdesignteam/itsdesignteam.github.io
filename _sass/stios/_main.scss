@@ -47,6 +47,8 @@ div.nav-container{
         padding: {
             right: 10px;
             left: 10px;
+            top: 5px;
+            bottom: 5px;
         }
         position: relative;
     }
@@ -69,5 +71,21 @@ div.nav-container{
     a:hover, a:focus, a:active {
         color: white;
         background-color:black;
+    }
+}
+
+div.page{
+    a{
+        padding: {
+            right: 10px;
+            left: 10px;
+            top: 5px;
+            bottom: 5px;
+        }
+        position: relative;
+    }
+    a:hover, a:focus, a:active {
+        color:black;
+        background-color:white;
     }
 }

@@ -107,6 +107,8 @@
 .marquee span {
     font-size: 2.75em;
     padding: 0 2vw;
+    color: white;
+    mix-blend-mode: overlay;
 }
 
 .marquee:hover .marquee__inner {
